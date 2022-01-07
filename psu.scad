@@ -18,7 +18,7 @@ module dc_podest() {
 module baseplate() {
 	difference() {
   	translate ([-4,0,0]) cube([214,145,2],center=false); //bodenplatte
-    translate([160,141,-1]) cylinder(h=7,d=5,center=false);
+    translate([157,141,-1]) cylinder(h=7,d=5,center=false);
 	}
 	translate([1,143,0])  cube([209,2,10],center=false); //seitenwand
 	translate([209,0,0]) cube([1,145,10],center=false); //vorderwand
