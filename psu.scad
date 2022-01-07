@@ -55,8 +55,8 @@ module rueckwand() {
 module leiste() {
 	difference() {
 		cube([195,5,10]);
-		translate([6,6,6]) rotate([90,0,0]) cylinder(h=7,d=4,center=false);
-		translate([176,6,6]) rotate([90,0,0]) cylinder(h=7,d=4,center=false);
+		translate([6,6,6]) rotate([90,0,0]) cylinder(h=7,d=5,center=false);
+		translate([176,6,6]) rotate([90,0,0]) cylinder(h=7,d=5,center=false);
 	}
 
 }
