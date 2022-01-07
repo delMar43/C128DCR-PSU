@@ -1,10 +1,10 @@
 $fn=15;
 
 //translate([0,0,1]) rueckwand();
-//baseplate();
+baseplate();
 //translate([15,0,-10]) leiste(); //leiste
 
-translate([-200,0,0]) dc_podest();
+//translate([-200,0,0]) dc_podest();
 
 //translate([120,-120,0]) coil_holder();
 
@@ -17,7 +17,10 @@ module dc_podest() {
 }
 
 module baseplate() {
-	cube([210,145,1],center=false); //bodenplatte
+	difference() {
+  	cube([210,145,1],center=false); //bodenplatte
+    translate([160,141,-1]) cylinder(h=7,d=5,center=false);
+	}
 	translate([1,144,0])  cube([209,1,10],center=false); //seitenwand
 	translate([209,0,0]) cube([1,145,10],center=false); //vorderwand
 	translate([1,0,1]) cube([5,144,5],center=false); //stabilisator
