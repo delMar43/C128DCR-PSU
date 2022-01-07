@@ -1,18 +1,18 @@
 $fn=15;
 
-translate([0,0,1]) rueckwand();
+//translate([0,0,1]) rueckwand();
 //baseplate();
 //translate([15,0,-10]) leiste(); //leiste
 
-//translate([-200,0,0]) dc_podest();
+translate([-200,0,0]) dc_podest();
 
 //translate([120,-120,0]) coil_holder();
 
 module dc_podest() {
 	difference() {
     cube([139,110,5],center=false); //DC-podest
-	  translate([10,5,-1]) cylinder(h=7,d=5,center=false);
-	  translate([132,105,-1]) cylinder(h=7,d=5,center=false);
+	  translate([10,13,-1]) cylinder(h=7,d=5,center=false);
+	  translate([132,98,-1]) cylinder(h=7,d=5,center=false);
   }
 }
 
