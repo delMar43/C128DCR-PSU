@@ -29,6 +29,8 @@ module coil_holder() {
   difference() {
 	  cube([72,50,6],center=false);
     translate([12,12,1]) cube([49,26,7],center=false);
+		translate([5,25,0]) cylinder(h=7,d=5,center=false);
+		translate([67,25,0]) cylinder(h=7,d=5,center=false);
 	}
 }
 
