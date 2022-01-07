@@ -38,6 +38,11 @@ module rueckwand() {
 //  translate([1,0,0]) cube([10,1,60],center=false);
 //  translate([1,1,0]) cube([5,2,60],center=false);
   difference() {
+	  translate([-4,-15,12]) cube([5,15,15],center=false);
+	  translate([-5,-10,20]) rotate([0,90,0]) cylinder(h=7,d=5,center=false);
+  }
+
+  difference() {
 		translate([-4,0,0]) cube([5,160,63],center=false);
 		
 		translate([-5,6,22]) cube([7,12,27],center=false);
