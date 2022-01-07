@@ -1,4 +1,4 @@
-$fn=15;
+$fn=36;
 
 translate([0,0,1]) rueckwand();
 baseplate();
@@ -50,7 +50,8 @@ module rueckwand() {
 
 		translate([-5,35,22]) cube([7,27,20],center=false);
 		translate([-6,32,19]) cube([5,33,27],center=false);
-		
+
+		translate([-5,100,33]) #rotate([0,90,0]) cylinder(h=7,d=40,center=false);		
 		translate([-5,150,-1]) cube([7,11,12],center=false);
 		
 		translate([-5,154,23]) rotate([0,90,0]) cylinder(h=7,d=5,center=false);
