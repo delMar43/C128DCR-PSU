@@ -18,12 +18,12 @@ module dc_podest() {
 
 module baseplate() {
 	difference() {
-  	cube([210,145,1],center=false); //bodenplatte
+  	translate ([-4,0,0]) cube([214,145,2],center=false); //bodenplatte
     translate([160,141,-1]) cylinder(h=7,d=5,center=false);
 	}
-	translate([1,144,0])  cube([209,1,10],center=false); //seitenwand
-	translate([209,0,0]) cube([1,145,10],center=false); //vorderwand
-	translate([1,0,1]) cube([5,144,5],center=false); //stabilisator
+	translate([1,143,0])  cube([209,2,10],center=false); //seitenwand
+	translate([208,0,0]) cube([2,145,10],center=false); //vorderwand
+	translate([1,0,0]) cube([5,144,10],center=false); //stabilisator
 }
 
 module coil_holder() {
