@@ -1,12 +1,12 @@
 $fn=15;
 
-//translate([0,0,1]) rueckwand();
+translate([0,0,1]) rueckwand();
 baseplate();
-//translate([15,0,-10]) leiste(); //leiste
+translate([15,0,-10]) leiste(); //leiste
 
-//translate([-200,0,0]) dc_podest();
+translate([-200,0,0]) dc_podest();
 
-//translate([120,-120,0]) coil_holder();
+translate([120,-120,0]) coil_holder();
 
 module dc_podest() {
 	difference() {
@@ -37,16 +37,18 @@ module rueckwand() {
 //  translate([1,0,0]) cube([10,1,60],center=false);
 //  translate([1,1,0]) cube([5,2,60],center=false);
   difference() {
-		translate([-4,0,0]) cube([5,160,60],center=false);
+		translate([-4,0,0]) cube([5,160,63],center=false);
 		
 		translate([-5,6,22]) cube([7,12,27],center=false);
-		translate([-5,3,19]) cube([5,18,34],center=false);
+		translate([-6,3,19]) cube([5,18,34],center=false);
 
 		translate([-5,35,22]) cube([7,27,20],center=false);
-		#translate([-5,32,19]) cube([5,33,27],center=false);
+		translate([-6,32,19]) cube([5,33,27],center=false);
 		
-		translate([-5,154,21]) rotate([0,90,0]) cylinder(h=7,d=5,center=false);
-    translate([-5,154,52]) rotate([0,90,0]) cylinder(h=7,d=5,center=false);
+		translate([-5,150,0]) cube([7,11,11],center=false);
+		
+		translate([-5,154,23]) rotate([0,90,0]) cylinder(h=7,d=5,center=false);
+    translate([-5,154,54]) rotate([0,90,0]) cylinder(h=7,d=5,center=false);
   }
 }
 
